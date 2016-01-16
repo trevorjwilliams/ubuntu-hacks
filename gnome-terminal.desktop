@@ -1,0 +1,34 @@
+[Desktop Entry]
+Name=Terminal
+Comment=Use the command line
+Keywords=shell;prompt;command;commandline;
+TryExec=gnome-terminal
+Exec=gnome-terminal
+Icon=utilities-terminal
+Type=Application
+X-GNOME-DocPath=gnome-terminal/index.html
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=gnome-terminal
+X-GNOME-Bugzilla-Component=BugBuddyBugs
+X-GNOME-Bugzilla-Version=3.16.2
+Categories=GNOME;GTK;System;TerminalEmulator;
+StartupNotify=true
+X-GNOME-SingleWindow=false
+OnlyShowIn=GNOME;Unity;
+Actions=New;NewLocal;NewRemote;
+X-Ubuntu-Gettext-Domain=gnome-terminal
+
+[Desktop Action New]
+Name=New Terminal (default)
+Exec=gnome-terminal
+OnlyShowIn=Unity
+
+[Desktop Action NewLocal]
+Name=New Terminal (local)
+Exec=gnome-terminal --profile=local
+OnlyShowIn=Unity
+
+[Desktop Action NewRemote]
+Name=New Terminal (remote)
+Exec=gnome-terminal --profile=athenahealth
+OnlyShowIn=Unity
